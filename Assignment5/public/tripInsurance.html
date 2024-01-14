@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Trip Insurance</title>
+    <link rel="stylesheet" href="site.css">
+    <script src="site.js"></script>
+</head>
+
+<body>
+    <main>
+        <!-- Main Menu -->
+        <div class="menu">
+            <ul>
+                <li><p>Pages:</p></li>
+                <li><a class="exampleLink" href="index.html">Main Page</a></li>
+                <li><a class="exampleLink" href="annualFuelUse.html">Annual Fuel Use</a></li>
+                <li><a class="exampleLink" href="tripFuelCost.html">Trip - Fuel Cost</a></li>
+            </ul>
+        </div>
+
+        <div class="buttonDiv">
+            <img class="imageButton" src="images/insurance.jpg" alt="next">
+        </div>
+
+        <!-- Main Page -->
+        <h1>Trip Insurance </h1>
+        <p>
+            Provides a list of miles and prices from 100 miles up to and including
+            2000 miles. The company allows users to buy regular insurance for a trip. The cost is 2 cents
+            per mile. The company also allows users to buy premium insurance for a trip for 4 cents per mile.
+        </p>
+
+        <button onclick="calculateInsurance('regular')">Calculate Regular Insurance</button>
+        <button onclick="calculateInsurance('premium')">Calculate Premium Insurance</button>
+
+        <table id="insuranceTable">
+            <thead>
+                <tr>
+                    <th>Miles</th>
+                    <th>Insurance Type</th>
+                    <th>Cost</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Output will be appended here through JavaScript -->
+            </tbody>
+        </table>
+
+        <script src="site.js"></script>
+
+    </main>
+</body>
+
+</html>

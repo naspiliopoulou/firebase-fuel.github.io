@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Trip Fuel Cost Calculator</title>
+    <link rel="stylesheet" href="site.css">
+    <script src="site.js"></script>
+</head>
+
+<body>
+    <main>
+        <!-- Main Menu -->
+        <div class="menu">
+            <ul>
+                <li><p>Pages:</p></li>
+                <li><a class="exampleLink" href="index.html">Main Page</a></li>
+                <li><a class="exampleLink" href="annualFuelUse.html">Annual Fuel Use</a></li>
+                <li><a class="exampleLink" href="tripInsurance.html">Trip - Insurance</a></li>
+            </ul>
+        </div>
+
+        <div class="buttonDiv">
+            <img class="imageButton" src="images/trip.jpg" alt="next">
+        </div>
+
+        <!-- Main Page -->
+        <h1>Trip Fuel Cost</h1>
+        <p>
+            Provides information on the fuel cost. 
+            This site allows the user to compute the total cost of gas for a trip.
+        </p>
+
+        <div class="container">
+            <div class="form-container">
+                <h3>Trip Fuel Cost Calculator</h3>
+                <form id="fuelForm">
+                    <label for="costPerGallon">Cost per gallon:</label>
+                    <input type="number" step=".01" id="costPerGallon" required>
+    
+                    <label for="milesPerGallon">Miles per gallon:</label>
+                    <input type="number" step=".01" id="milesPerGallon" required>
+    
+                    <label for="miles">Miles:</label>
+                    <input type="number" step=".01" id="miles" required>
+    
+                    <button type="button" onclick="calculateTotalCost()">Calculate</button>
+                </form>
+            </div>
+    
+            <div class="output-container">
+                <h2>Total Cost</h2>
+                <div id="totalCostOutput"></div>
+            </div>
+        </div>
+    
+        <script src="site.js"></script>
+
+    </main>
+</body>
+
+</html>
